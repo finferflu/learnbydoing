@@ -1,0 +1,42 @@
+article {
+	margin-top: 20px;
+}
+
+.spacer {
+    height: 60px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html, body {
+	height: 100%;
+}
+
+.main-container {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+footer {
+	display: table-row;
+	height: 1px;
+    background-color: #f5f5f5;
+}
+
+/* Adjust footer margins
+-------------------------------------------------- */
+.footer-main-menu {
+    margin-top: @line-height-computed * 2;
+}
+
+footer > .container {
+    padding-bottom: 10px;
+}
+
+@media (min-width: @screen-sm-min) {
+    footer > .container {
+        padding-bottom: 30px;
+    }
+}
