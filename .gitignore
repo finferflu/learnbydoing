@@ -30,3 +30,6 @@ Thumbs.db
 # Codekit
 ######################
 *.codekit
+
+# To-do List
+*.todo
