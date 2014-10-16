@@ -1,10 +1,76 @@
+/* Header 
+---------------------------------------------------- */
+header {
+	margin-bottom: 20px;
+}
+
+.blog-header-text {
+	font-size: 22pt;
+}
+
+@media (min-width: @screen-sm-min) {
+	.blog-header-text {
+		font-size: 2em;
+	}
+	
+	header {
+		margin-bottom: 40px;
+	}
+}
+
 article {
 	margin-top: 20px;
 }
 
-.spacer {
-    height: 60px;
+/* Archive pages styles
+-------------------------------------------------- */
+
+.archive-listing-title {
+	font-size: 18pt;
+	margin-bottom: 35px;
 }
+
+.archive-title,
+.archive-paint-title {
+	margin-top: 0;
+}
+
+@media (max-width: @screen-xs-max) {
+	.archive-listing-title {
+		font-size: 14pt;
+		margin-bottom: 25px;
+	}
+	.archive-title, 
+	.archive-paint-title {
+		font-size: 12pt;
+		margin-bottom: 5px;
+	}
+	
+	.archive-excerpt, 
+	.archive-meta, 
+	.archive-paint-meta {
+		font-size: 10pt;
+	}
+	
+	.col-archive-article {
+		padding-left: 0;
+	}	
+}
+
+body.archive .spacer {
+	height: 20px;
+}
+
+@media (min-width: @screen-sm-min) {
+	.archive-paint-title {
+		margin-top: 20px;
+	}
+	
+	body.archive .spacer {
+		height: 40px;
+	}
+}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -23,6 +89,11 @@ footer {
 	display: table-row;
 	height: 1px;
     background-color: #f5f5f5;
+}
+
+body.archive .spacer:last-child,
+.spacer {
+    height: 60px;
 }
 
 /* Adjust footer margins
