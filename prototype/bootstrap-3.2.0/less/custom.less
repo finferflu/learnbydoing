@@ -44,14 +44,20 @@ article {
 		margin-bottom: 25px;
 	}
 	.archive-title, 
-	.archive-paint-title {
+	.archive-paint-title,
+	.archive-painting-title {
 		font-size: 12pt;
 		margin-bottom: 5px;
 	}
 	
+    .archive-painting-title {
+        margin-top: 10px;
+    }
+	
 	.archive-excerpt, 
 	.archive-meta, 
-	.archive-paint-meta {
+	.archive-paint-meta,
+	.archive-painting-meta {
 		font-size: 10pt;
 	}
 	
@@ -60,18 +66,30 @@ article {
 	}	
 }
 
-body.archive .spacer {
+.spacer {
 	height: 20px;
+	clear: both;
 }
 
-@media (min-width: @screen-sm-min) {
-	.archive-paint-title {
-		margin-top: 20px;
-	}
-	
-	body.archive .spacer {
+@media (min-width: @screen-sm-min) {	
+	body.archive .spacer,
+	body.archive-paintings .spacer {
 		height: 40px;
 	}
+}
+
+@media (min-width: @screen-md-min) {
+    .archive-painting-meta {
+        margin-top: 10px;
+    }
+    
+    .paintings-meta-container {
+        padding-left: 0;
+        
+        > h3 {
+            margin-top: 0;
+        }
+    }
 }
 
 
@@ -92,11 +110,6 @@ footer {
 	display: table-row;
 	height: 1px;
     background-color: #f5f5f5;
-}
-
-body.archive .spacer:last-child,
-.spacer {
-    height: 60px;
 }
 
 /* Adjust footer margins
