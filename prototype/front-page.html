@@ -18,82 +18,81 @@
                   <p class="lead text-center hidden-xs">My path towards mastering watercolour, one failure at a time.</p>
                 </header>
                   
-                <h2 class="archive-listing-title text-center">Home</h2>
                 
                 <!-- BEGIN outer .row -->
                 <div class="row">
                     
                     <!-- BEGIN left column -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
+                        <h2 class="homepage-section-title text-center">My Latest Masterpieces</h2>
+
                         
-                        <!-- Each inner .row contains three items -->
+                        <!-- Each inner .row contains four items -->
                         <!-- BEGIN inner .row left -->
                         <div class="row">
                             <!-- BEGIN Single item listing -->
-                        	<div class="col-md-4">
-        	                	<a href="single.html"><img src="uploads/w1.jpg" alt="Painting 1 Preview" class="img-thumbnail"></a>
+                        	<div class="col-md-6 col-sm-6">
+        	                	<a href="single.html"><img src="uploads/w1.jpg" alt="Painting 1 Preview" class="img-thumbnail" /></a>
+        	                	<h3 class="homepage-painting-title"><a href="single.html">Attempt 13: Blah Blah Us Only Sky</a></h3>
+        
+                        	</div>
+                            <div class="spacer hidden-sm hidden-md hidden-lg"></div>
+                            <!-- END Single item listing -->
+                            
+                            <!-- BEGIN Single item listing -->
+                        	<div class="col-md-6 col-sm-6">
+        	                	<a href="single.html"><img src="uploads/w8.jpg" alt="Painting 1 Preview" class="img-thumbnail" /></a>
         	                	<h3 class="homepage-painting-title"><a href="single.html">Attempt 12: Above Us Only Sky</a></h3>
         
                         	</div>
-                            <div class="spacer hidden-md hidden-lg"></div>
+                            <div class="spacer hidden-sm hidden-md hidden-lg"></div>
                             <!-- END Single item listing -->
+
         
                             <!-- BEGIN Single item listing -->
-                        	<div class="col-md-4">
+                        	<div class="col-md-6 col-sm-6">
         	                	<a href="single.html"><img src="uploads/w2.jpg" alt="Painting 1 Preview" class="img-thumbnail"></a>
         	                	<h3 class="homepage-painting-title"><a href="single.html">Attempt 11: Under Us Only Ipsum</a></h3>
         
                         	</div>
-                            <div class="spacer hidden-md hidden-lg"></div>
+                            <div class="spacer hidden-sm hidden-md hidden-lg"></div>
                             <!-- END Single item listing -->
         
+                            <!-- The following 3 entries are hidden on mobile for presentation purposes as they won't be visible on WP -->
                             <!-- BEGIN Single item listing -->
-                        	<div class="col-md-4">
+                        	<div class="col-md-6 col-sm-6 hidden-xs">
         	                	<a href="single.html"><img src="uploads/w3.jpg" alt="Painting 1 Preview" class="img-thumbnail"></a>
         	                	<h3 class="homepage-painting-title"><a href="single.html">Attempt 10: From Crap to Crap</a></h3>
         
                         	</div>
-                            <div class="spacer hidden-md hidden-lg"></div>
+                            <div class="spacer hidden-sm hidden-md hidden-lg hidden-xs"></div>
                             <!-- END Single item listing -->
-                         
-                        <!-- END inner .row left -->   
-                        </div>
-                        
-                        
-                        <!-- These don't show up on mobile, so I'm going to hide them here for presentation purposes -->
-                        <!-- BEGIN inner .row left -->
-                        <div class="row visible-md-block visible-lg-block">
-                    
+                            
                             <!-- BEGIN Single item listing -->
-                        	<div class="col-md-4">
+                        	<div class="col-md-6 col-sm-6 hidden-xs">
         	                	<a href="single.html"><img src="uploads/w4.jpg" alt="Painting 1 Preview" class="img-thumbnail"></a>
         	                	<h3 class="homepage-painting-title"><a href="single.html">Attempt 9: Another Amazing Painting</a></h3>
         
                         	</div>
-                            <div class="spacer hidden-md hidden-lg"></div>
-                            <!-- END Single item listing -->
-        
-                            <!-- BEGIN Single item listing -->
-                        	<div class="col-md-4">
-        	                	<a href="single.html"><img src="uploads/w5.jpg" alt="Painting 1 Preview" class="img-thumbnail"></a>
-        	                	<h3 class="homepage-painting-title"><a href="single.html">Attempt 8: Great Stuff!</a></h3>
-        
-                        	</div>
-                            <div class="spacer hidden-md hidden-lg"></div>
-                            <!-- END Single item listing -->
-        
-                            <!-- BEGIN Single item listing -->
-                        	<div class="col-md-4">
-        	                	<a href="single.html"><img src="uploads/w6.jpg" alt="Painting 1 Preview" class="img-thumbnail"></a>
-        	                	<h3 class="homepage-painting-title"><a href="single.html">Attempt 7: Yes, I Have Outdone Myself</a></h3>
-                        	</div>
-                            <div class="spacer hidden-md hidden-lg"></div>
+                            <div class="spacer hidden-sm hidden-md hidden-lg hidden-xs"></div>
                             <!-- END Single item listing -->
 
-                        <!-- END inner .row left -->
+
+                            <!-- BEGIN Single item listing -->
+                        	<div class="col-md-6 col-sm-6 hidden-xs">
+        	                	<a href="single.html"><img src="uploads/w4.jpg" alt="Painting 1 Preview" class="img-thumbnail"></a>
+        	                	<h3 class="homepage-painting-title"><a href="single.html">Attempt 9: Another Amazing Painting</a></h3>
+        
+                        	</div>
+                            <div class="spacer hidden-sm hidden-md hidden-lg hidden-xs"></div>
+                            <!-- END Single item listing -->
+
+                         
+                        <!-- END inner .row left -->   
                         </div>
-                        
-                        <hr class="visible-xs-block" />
+                        <div class="spacer visible-sm-block"></div>
+                                                
+                        <hr class="hidden-md hidden-lg" />
                      
                     <!-- END left column -->   
                     </div>
@@ -108,25 +107,27 @@
                         <div class="row">
                             <!-- BEGIN news container -->
                             <div class="col-md-12">
-                                <h2 class="homepage-news-heading">More Crap From My Desk</h2>
+                                <h2 class="homepage-section-title text-center">More Crap From My Desk</h2>
                                 
                                 <!-- There will be (hopefully) a shorter excerpt for mobile, managed via wp_is_mobile(). The visible-xs-block class is applied here for presentation purposes only -->                                
                                 <h3 class="homepage-news-title"><a href="#">Here Are Some New News!</a></h3>
                                 <p class="homepage-news-meta">19 April, 2014</p>
                                 <p class="homepage-news-excerpt visible-xs-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat [...] <a href="#">Read More</a></p>
-                                <p class="homepage-news-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...] <a href="#">Read More</a></p>
+                                <p class="homepage-news-excerpt hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...] <a href="#">Read More</a></p>
+                                <div class="spacer"></div>
 
                                 
                                 <h3 class="homepage-news-title"><a href="#">Here Are Some New News!</a></h3>
                                 <p class="homepage-news-meta">23 May, 2014</p>
                                 <p class="homepage-news-excerpt visible-xs-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat [...] <a href="#">Read More</a></p>
-                                <p class="homepage-news-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...] <a href="#">Read More</a></p>
-        
+                                <p class="homepage-news-excerpt hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...] <a href="#">Read More</a></p>
+                                <div class="spacer"></div>
         
                                 <h3 class="homepage-news-title"><a href="#">Here Are Some New News!</a></h3>
                                 <p class="homepage-news-meta">17 May, 2014</p>
                                 <p class="homepage-news-excerpt visible-xs-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat [...] <a href="#">Read More</a></p>
-                                <p class="homepage-news-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...] <a href="#">Read More</a></p>
+                                <p class="homepage-news-excerpt hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [...] <a href="#">Read More</a></p>
+                                <div class="spacer"></div>
 
                             <!-- END news container -->
                             </div>

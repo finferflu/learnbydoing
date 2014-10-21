@@ -26,7 +26,7 @@ article {
 }
 
 /* Homepage and archive pages styles
--------------------------------------------------- */
+-------------------------------------------------- -- */
 
 .archive-listing-title {
 	font-size: 18pt;
@@ -38,41 +38,46 @@ article {
 	margin-top: 0;
 }
 
-@media (max-width: @screen-xs-max) {
-	.archive-listing-title {
-		font-size: 14pt;
-		margin-bottom: 25px;
-	}
-	.archive-title, 
-	.archive-paint-title,
-	.archive-painting-title,
-	.homepage-painting-title,
-	.homepage-news-title {
-		font-size: 12pt;
-		margin-bottom: 5px;
-	}
-	
-	.homepage-painting-title {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-	
-    .archive-painting-title {
-        margin-top: 10px;
-    }
-	
-	.archive-excerpt, 
-	.archive-meta, 
-	.archive-paint-meta,
-	.archive-painting-meta,
-	.homepage-news-meta {
-		font-size: 10pt;
-	}
-	
-	.col-archive-article {
-		padding-left: 0;
-	}	
+
+.archive-listing-title {
+	font-size: 14pt;
+	margin-bottom: 25px;
 }
+
+.archive-title, 
+.archive-paint-title,
+.archive-painting-title,
+.homepage-painting-title,
+.homepage-news-title {
+	font-size: 12pt;
+    margin-bottom: 5px;
+}
+
+.homepage-section-title {
+    font-size: 16pt;
+}
+
+.homepage-painting-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.archive-painting-title {
+    margin-top: 10px;
+}
+
+.archive-excerpt, 
+.archive-meta, 
+.archive-paint-meta,
+.archive-painting-meta,
+.homepage-news-meta {
+	font-size: 10pt;
+}
+
+.col-archive-article {
+	padding-left: 0;
+}	
+
 
 .spacer {
 	height: 20px;
@@ -84,6 +89,15 @@ article {
 	body.archive-paintings .spacer {
 		height: 40px;
 	}
+	
+	.homepage-painting-title {
+    	margin-bottom: 40px;
+	}
+	
+	.homepage-section-title {
+        font-size: 18pt;
+        margin-bottom: 25px;
+    }
 }
 
 @media (min-width: @screen-md-min) {
@@ -99,12 +113,6 @@ article {
         }
     }
 }
-
-.homepage-news-heading {
-    font-size: 16pt;
-    text-align: center;
-}
-
 
 /* Sticky footer styles
 -------------------------------------------------- */
