@@ -5,21 +5,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>Learning Watercolor</title>
-        
-        <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="author" href="humans.txt">
-        <link rel="stylesheet" href="http://basehold.it/32">
     </head>
     <body>
         <!-- BEGIN .container -->
         <div class="main-container">
+            <div class="container">
                 <header>
-                  <div class="blog-title-container">
-                      <h1 class="text-center blog-title">Learning Watercolour</h1>
-                  </div>
-                  <p class="lead text-center">My path towards mastering watercolour, one failure at a time.</p>
-                  <div class="header-bottom"></div>
+                  <h1 class="text-center blog-header-text">Learning Watercolour</h1>
+                  <p class="lead text-center hidden-xs">My path towards mastering watercolour, one failure at a time.</p>
                 </header>
                   
                 <!-- BEGIN Single article -->
@@ -27,29 +22,22 @@
                 <div class="row">
                     
                     <!-- BEGIN inner column -->
-                    <div class="large-12 columns">
+                    <div class="col-md-12">
                         
-                        <h2 class="entry-title">This Is Like a News Page or Something Bla Blah Blah Blah Blah</h2>
+                        <h3>This Is Like a News Page or Something</h3>
+                        <p class="date"><a href="#">24 April, 2014</a></p>
                         <article>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipi*sicing elit, sed do eiusmod t*empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-                                <div class="wp-caption">
-                                    <a href="uploads/img.jpg">
-                                        <!-- Will pull different image sizes in WP  -->
-                                        <img class="post-image" data-interchange="[/uploads/img.jpg, (default)], [/uploads/img.jpg, (medium)], [/uploads/img.jpg, (default)]" /><noscript><img src="uploads/img.jpg" /></noscript>
-                                    </a>
-                                    <p class="wp-caption-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-
-                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <br /><br />
+                                <img src="uploads/img.jpg" class="img-responsive img-thumbnail" />
+                                <br /><br />
+                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                           </article>
-    					  <div class="metabox">
-        					  <p class="meta date"><b>Published: </b><a href="#">24 April, 2014</a></p>
-        	                  <p class="meta tags"><b>Tags:</b> <a href="#">#tag1</a> <a href="#">#tag2</a> <a href="#">#tag3</a> <a href="#">#Quite a long tag!</a></p>
-    					  </div>
+    					  
+    					  <hr />
+    	                  <p><b>Tags:</b> <a href="#">#tag1</a>, <a href="#">#tag2</a>, <a href="#">#tag3</a></p>
                           
-                          <h4>Leave a comment</h4>
+                          <h2>Leave a comment</h2>
                           <div class="form-group">
                           	<label for="comment"></label>
                           	<textarea class="form-control" rows="3" id="comment"></textarea>
@@ -63,63 +51,49 @@
                 
                 <div class="spacer"></div>
                 <!-- END Single article -->
+            </div>
 
-            <div class="footer-top"></div>    
-    		<footer class="block">
-                <div class="row">
-                    <div class="large-4 columns footer-main-menu">
-                        <h3 class="small-text-center">Browse Some?</h3>
-                        <ul class="no-bullet small-text-center">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">My Masterpieces</a></li>
-                        </ul>
-                        
-                        <form>
-                        <div class="row collapse">
-                            <div class="small-8 columns">
-                                <input type="text" placeholder="Type something...">
-                            </div>
-                            <div class="small-4 columns">
-                                <a href="#" class="button postfix">Search</a>
-                            </div>
-                        </div>
-                        </form> 
-                    </div>  
-
-                    <div class="large-4 columns footer-latest-posts">
-                        <h3 class="small-text-center">Latest Masterpieces</h3>
-                        <ul class="no-bullet small-text-center">
-                            <li><a href="#">Work 1: Lorem ipsum</a></li>
-                            <li><a href="#">Work 2 dolor sit amet</a></li>
-                            <li><a href="#">Work 3 consectetur adipisic...</a></li>
-                            <li><a href="#">Work 4 ugiat nulla pariatur</a></li>
-                        </ul>
-                    </div>
-                    
-                        <div class="large-4 columns footer-archives">
-                        <h3 class="small-text-center">Archives by date</h3>
-                        <ul class="no-bullet small-text-center">
-                            <li><a href="#">October 2014</a></li>
-                            <li><a href="#">September 2014</a></li>
-                            <li><a href="#">August 2014</a></li>
-                            <li><a href="#">July 2014</a></li>
-                        </ul>
+        
+        <footer class="block">
+            <div class="container">
+                <div class="col-md-4 footer-main-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">My Masterpieces</a></li>
+                    </ul>
+                    <div class="input-group">
+                    	<input type="text" class="form-control">
+                    	<span class="input-group-btn">
+                    		<button class="btn btn-default" type="button">Search</button>
+                    	</span>
                     </div>
                 </div>
-    		</footer>
+                
+                <div class="col-md-4">
+                    <h3>Latest Masterpieces</h3>
+                    <ul>
+                        <li><a href="#">Work 1</a></li>
+                        <li><a href="#">Work 2</a></li>
+                        <li><a href="#">Work 3</a></li>
+                        <li><a href="#">Work 4</a></li>
+                    </ul>
+                </div>
+                
+                    <div class="col-md-4">
+                    <h3>Archives by date</h3>
+                    <ul>
+                        <li><a href="#">October 2014</a></li>
+                        <li><a href="#">September 2014</a></li>
+                        <li><a href="#">August 2014</a></li>
+                        <li><a href="#">July 2014</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     <!-- END .main-container -->
     </div>
 
         
-        <script src="bower_components/foundation/js/vendor/jquery.js"></script>
-        <script src="bower_components/foundation/js/vendor/fastclick.js"></script>
-        <script src="bower_components/foundation/js/foundation.min.js"></script>
-        <script src="bower_components/foundation/js/foundation/foundation.interchange.js"></script>
-
-        <script>
-          $(document).foundation();
-        </script>
-
     </body>
-    </html>
+</html>
