@@ -1,0 +1,283 @@
+@import "bourbon";
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+
+// General
+
+// Temporary rule to make baseline.it work
+body { height: auto !important; }
+
+/* border-serrated
+        a zig zag triangle border with linear gradient
+*/
+@mixin border-top-serrated($size, $color-outer) {
+    & {
+        position: relative;
+        padding-top: $size;
+    }  
+    &:before {
+        top: 0px;
+        background-position: left top;
+        @include background(linear-gradient(-135deg, $color-outer $size / 2, transparent 0), linear-gradient(135deg, $color-outer $size / 2, transparent 0));
+        @include border-serrated-helper($size, $color-outer);
+    }
+}
+@mixin border-bottom-serrated($size, $color-outer) {
+    & {
+        position: relative;
+        padding-bottom: $size;
+    }
+    &:after {
+        bottom: 0px;
+        background-position: left bottom;
+        @include background(linear-gradient(-45deg, $color-outer $size / 2, transparent 0), linear-gradient(45deg, $color-outer $size / 2, transparent 0));
+        @include border-serrated-helper($size, $color-outer);
+    }
+}
+
+@mixin border-serrated-helper($size, $color-outer) {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: $size;
+    background-repeat: repeat-x;
+    background-size: $size $size;
+}
+ 
+
+
+body {
+    background: $white url(/img/tree_bark.png) repeat top left;
+}
+
+h1 {
+    color: $jet;
+}
+
+h2 {
+    color: $salmon;
+    padding: 0.2rem 0.6rem;
+             transform: rotate(3deg);
+          -o-transform: rotate(3deg);
+         -ms-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+     -webkit-transform: rotate(3deg);
+}                              
+
+// Header styles 
+header {
+    margin-bottom: 2rem;
+}
+
+.blog-title-container {
+   @include border-bottom-serrated(.5em, $white);
+   padding-top: 1rem;
+   h1.blog-title {
+       margin-bottom: 2.5rem;
+       color: $brightgreen;
+   }
+   
+   background: transparent url(../img/tree_bark-inverted.png) repeat top left;
+}
+
+.header-bottom {
+  @include border-top-serrated(.5em, $white);
+  margin-top: -2rem
+}
+
+p.lead {
+    font-family: $font-family-sans-serif-secondary;
+    padding: 2rem 1rem 2.5rem;
+    color: $jet;
+    background-color: $white;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: $darkblue;
+    
+    &:hover {
+        color: $lightblue;
+    }
+}
+
+// Generic article styles 
+article {
+    background-color: $white;
+    padding: 0.7rem 1rem;
+    margin-top: 1rem;
+}
+
+@media #{$medium-up} {
+    header {
+        margin-bottom: 3rem;
+    }
+    
+    article {
+        margin-top: 0;
+        
+        .wp-caption {
+            margin-top: 2.2rem;
+        }
+    }
+    
+    .entry-title {
+        margin-bottom: 0;
+    }
+    
+}
+
+// Single post styles
+.meta {
+    font-family: $font-family-sans-serif-secondary;
+    font-size: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post-image {
+    display: block;
+    margin-bottom: 0;
+}
+
+.wp-caption-text {
+    margin-top: .5rem;
+    margin-bottom: 2.4rem;
+    font-size: 70%;
+    font-style: italic;
+    line-height: 1.05rem;
+    padding: 0 .2rem;
+}
+
+.spacer {
+    height: 3rem;
+}
+
+.metabox {
+    width: 250px;
+    padding: .2rem 1rem .4rem;
+    margin: -0.8rem auto 2rem;
+    background-color: $darkblue;
+             transform: rotate(-4deg);
+          -o-transform: rotate(-4deg);
+         -ms-transform: rotate(-4deg);
+        -moz-transform: rotate(-4deg);
+     -webkit-transform: rotate(-4deg);
+     
+    p {
+         color: $salmon;
+    }
+     
+    a {
+         color: $brightgreen;
+    }
+     
+    .tags a {
+         text-decoration: underline;
+    }
+}
+
+
+// Footer styles 
+.footer-top {
+  @include border-bottom-serrated(.5em, $brightgreen);
+}
+
+footer {
+    .footer-main-menu {
+            background-color: $brightgreen;
+        }
+        
+    .footer-latest-posts {
+        background-color: $lightblue;
+        @include border-top-serrated(.5em, $brightgreen);
+        @include border-bottom-serrated(.5em, $jet);
+        
+        a {
+            color: $brightgreen;
+        }
+    }
+    
+    .footer-archives {
+        background-color: $jet;
+        
+        h3 {
+            color: $brightgreen;
+        }
+        
+        a {
+            color: $white;
+        }
+    }
+
+    h4 {
+        color: $jet;
+    }
+    a { 
+        font-family: $font-family-sans-serif-secondary;
+        color: $darkblue;
+    }
+    
+    input {
+       font-size: $h6-font-size !important; 
+    }
+    
+    .button {
+        background-color: $jet;
+        color: $jet;
+        font-family: $font-family-sans-serif-secondary;
+        color: $white;
+        font-size: $h6-font-size;
+        
+        &:hover {
+            background-color: $lightblue;
+        }
+    }
+}
+
+@media #{$medium-up} {
+    footer ul a {
+        font-size: $h5-font-size;
+    }
+}
