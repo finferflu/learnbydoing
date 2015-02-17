@@ -88,7 +88,7 @@ body { height: auto !important; }
 
 
 body {
-    background: $white url(/img/tree_bark.png) repeat top left;
+    background: $white url(../img/tree_bark.png) repeat top left;
 }
 
 h1 {
@@ -98,40 +98,40 @@ h1 {
 h2 {
     color: $salmon;
     padding: 0.2rem 0.6rem;
+/*
              transform: rotate(3deg);
           -o-transform: rotate(3deg);
          -ms-transform: rotate(3deg);
         -moz-transform: rotate(3deg);
      -webkit-transform: rotate(3deg);
-}                              
+*/
+}   
+
+.img-separator {
+    display: block;
+    width: 4rem;
+    margin: 0 auto;
+}                           
 
 // Header styles 
 header {
-    margin-bottom: 2rem;
+    margin: 2rem 1.5rem 2.5rem;
+    border: 4px double $jet;
+    background: RGBA(199, 253, 145, 0.3);
 }
 
-.blog-title-container {
-   @include border-bottom-serrated(.5em, $white);
-   padding-top: 1rem;
-   h1.blog-title {
-       margin-bottom: 2.5rem;
-       color: $brightgreen;
-   }
-   
-   background: transparent url(../img/tree_bark-inverted.png) repeat top left;
-}
-
-.header-bottom {
-  @include border-top-serrated(.5em, $white);
-  margin-top: -2rem
+h1.blog-title {
+   margin: 3rem 2rem;
 }
 
 p.lead {
     font-family: $font-family-sans-serif-secondary;
-    padding: 2rem 1rem 2.5rem;
+    padding: 2rem 0.2rem;
+    text-align: center;
     color: $jet;
-    background-color: $white;
-    margin-bottom: 2rem;
+//     border-top: 1px solid $salmon;
+    margin: 0 3.2rem;
+    line-height: 1.6rem;
 }
 
 a {
@@ -147,6 +147,11 @@ article {
     background-color: $white;
     padding: 0.7rem 1rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+    a {
+        text-decoration: underline;
+    }
 }
 
 @media #{$medium-up} {
@@ -168,6 +173,10 @@ article {
     
 }
 
+#comments {
+    margin-top: 2rem;
+}
+
 // Single post styles
 .meta {
     font-family: $font-family-sans-serif-secondary;
@@ -176,9 +185,16 @@ article {
     margin-bottom: 0;
 }
 
+.wp-caption {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 .post-image {
     display: block;
     margin-bottom: 0;
+    border: 3px double $jet;
+    padding: .5rem;
 }
 
 .wp-caption-text {
@@ -194,28 +210,13 @@ article {
     height: 3rem;
 }
 
-.metabox {
-    width: 250px;
-    padding: .2rem 1rem .4rem;
-    margin: -0.8rem auto 2rem;
-    background-color: $darkblue;
-             transform: rotate(-4deg);
-          -o-transform: rotate(-4deg);
-         -ms-transform: rotate(-4deg);
-        -moz-transform: rotate(-4deg);
-     -webkit-transform: rotate(-4deg);
-     
-    p {
-         color: $salmon;
-    }
-     
-    a {
-         color: $brightgreen;
-    }
-     
-    .tags a {
-         text-decoration: underline;
-    }
+.meta-info {
+    border-top: 1px solid $jet;
+    list-style-type: circle;
+    list-style-position: inside;
+    margin: 1.5rem 1rem;
+    padding-top: .5rem;
+    color: $salmon;
 }
 
 
@@ -225,12 +226,17 @@ article {
 }
 
 footer {
+    
+    h3 {
+        margin-top: 1rem;
+    }
+    
     .footer-main-menu {
-            background-color: $brightgreen;
+            background: $brightgreen;
         }
         
     .footer-latest-posts {
-        background-color: $lightblue;
+        background: $lightblue;
         @include border-top-serrated(.5em, $brightgreen);
         @include border-bottom-serrated(.5em, $jet);
         
@@ -240,7 +246,7 @@ footer {
     }
     
     .footer-archives {
-        background-color: $jet;
+        background: $jet;
         
         h3 {
             color: $brightgreen;
@@ -276,7 +282,8 @@ footer {
     }
 }
 
-@media #{$medium-up} {
+// iPad rules
+@media #{$medium-up} {    
     footer ul a {
         font-size: $h5-font-size;
     }

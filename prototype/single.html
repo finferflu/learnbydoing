@@ -9,17 +9,16 @@
         <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
         <link rel="stylesheet" href="css/custom.css">
         <link rel="author" href="humans.txt">
-        <link rel="stylesheet" href="http://basehold.it/32">
+<!--         <link rel="stylesheet" href="http://basehold.it/25"> -->
     </head>
     <body>
         <!-- BEGIN .container -->
         <div class="main-container">
                 <header>
-                  <div class="blog-title-container">
-                      <h1 class="text-center blog-title">Learning Watercolour</h1>
-                  </div>
-                  <p class="lead text-center">My path towards mastering watercolour, one failure at a time.</p>
-                  <div class="header-bottom"></div>
+                  <h1 class="text-center blog-title">Learning Watercolour</h1>
+<!--                   <hr class="hr-separator" /> -->
+                  <img class="img-separator" src="img/sep.png" />
+                  <p class="lead">My path towards mastering watercolour, one failure at a time.</p>
                 </header>
                   
                 <!-- BEGIN Single article -->
@@ -36,23 +35,27 @@
                                 <div class="wp-caption">
                                     <a href="uploads/img.jpg">
                                         <!-- Will pull different image sizes in WP  -->
-                                        <img class="post-image" data-interchange="[/uploads/img.jpg, (default)], [/uploads/img.jpg, (medium)], [/uploads/img.jpg, (default)]" /><noscript><img src="uploads/img.jpg" /></noscript>
+                                        <img class="post-image" data-interchange="[uploads/img.jpg, (default)], [uploads/img.jpg, (medium)], [uploads/img.jpg, (default)]" /><noscript><img src="uploads/img.jpg" /></noscript>
                                     </a>
                                     <p class="wp-caption-text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
 
                              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                             
+                             <ul class="meta-info">
+        					  <li><p class="meta date">Published: <a href="#">24 April, 2014</a></p></li>
+        	                  <li><p class="meta tags">Tags: <a href="#">#tag1</a> <a href="#">#tag2</a> <a href="#">#tag3</a> <a href="#">#Quite a long tag!</a></p></li>
+        					  </ul>
                           </article>
-    					  <div class="metabox">
-        					  <p class="meta date"><b>Published: </b><a href="#">24 April, 2014</a></p>
-        	                  <p class="meta tags"><b>Tags:</b> <a href="#">#tag1</a> <a href="#">#tag2</a> <a href="#">#tag3</a> <a href="#">#Quite a long tag!</a></p>
-    					  </div>
+                          <img class="img-separator" src="img/sep.png" />
                           
-                          <h4>Leave a comment</h4>
-                          <div class="form-group">
-                          	<label for="comment"></label>
-                          	<textarea class="form-control" rows="3" id="comment"></textarea>
+                          <div id="comments">
+                              <h4 class="text-center">Leave a comment</h4>
+                              <div class="form-group">
+                              	<label for="comment"></label>
+                              	<textarea class="form-control" rows="3" id="comment"></textarea>
+                              </div>
                           </div>
                     
                     <!-- END inner colum -->
