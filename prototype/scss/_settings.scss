@@ -121,15 +121,24 @@ $font-family-serif: "Libre Baskerville", Cambria, "Times New Roman", Times, seri
 // $jet         : #222222;
 // $black       : #000000;
 
+/*
 $white          : #F4F4F4;
 $violet         : #7292FF;
 $jet            : #222222;
-
 $darkblue       : #475DB2;
 $salmon         : #FF9272;
 $lightblue      : #587BFF;
 $brightgreen    : #C6FF8B;
 $brown          : #B2583E;
+*/
+
+$base               : #E7E6E6;
+$white              : #F4F4F4;
+$black              : #222222;
+$primary-light      : #FFC7B8;
+$primary-dark       : #FD9276;
+$secondary-light    : #76FED3;
+$secondary-dark     : #7B9A91;
 // We use these as default colors throughout
 // $primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
@@ -140,7 +149,7 @@ $brown          : #B2583E;
 
 // We use these to control various global styles
 $body-bg: $white;
-$body-font-color: $jet;
+$body-font-color: $black;
 $body-font-family: $font-family-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;

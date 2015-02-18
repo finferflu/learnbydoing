@@ -92,12 +92,13 @@ body {
 }
 
 h1 {
-    color: $jet;
+    color: $black;
 }
 
 h2 {
-    color: $salmon;
-    padding: 0.2rem 0.6rem;
+    color: $primary-dark;
+    padding: 0.6rem 0.6rem;
+    text-decoration: underline;
 /*
              transform: rotate(3deg);
           -o-transform: rotate(3deg);
@@ -116,29 +117,30 @@ h2 {
 // Header styles 
 header {
     margin: 2rem 1.5rem 2.5rem;
-    border: 4px double $jet;
-    background: RGBA(199, 253, 145, 0.3);
+    border: 10px double $secondary-light;
 }
 
 h1.blog-title {
    margin: 3rem 2rem;
+   color: $black;
 }
 
 p.lead {
     font-family: $font-family-sans-serif-secondary;
     padding: 2rem 0.2rem;
     text-align: center;
-    color: $jet;
+    color: $black;
+    font-size: 0.99rem;
 //     border-top: 1px solid $salmon;
     margin: 0 3.2rem;
-    line-height: 1.6rem;
+    line-height: 1.3rem;
 }
 
 a {
-    color: $darkblue;
+    color: $primary-dark;
     
     &:hover {
-        color: $lightblue;
+        color: $secondary-light;
     }
 }
 
@@ -180,7 +182,7 @@ article {
 // Single post styles
 .meta {
     font-family: $font-family-sans-serif-secondary;
-    font-size: 80%;
+    font-size: 98%;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -193,7 +195,7 @@ article {
 .post-image {
     display: block;
     margin-bottom: 0;
-    border: 3px double $jet;
+    border: 3px double $black;
     padding: .5rem;
 }
 
@@ -211,18 +213,18 @@ article {
 }
 
 .meta-info {
-    border-top: 1px solid $jet;
+    border-top: 1px solid $black;
     list-style-type: circle;
     list-style-position: inside;
     margin: 1.5rem 1rem;
     padding-top: .5rem;
-    color: $salmon;
+    color: $secondary-dark;
 }
 
 
 // Footer styles 
 .footer-top {
-  @include border-bottom-serrated(.5em, $brightgreen);
+  @include border-bottom-serrated(.5em, $primary-dark);
 }
 
 footer {
@@ -232,37 +234,45 @@ footer {
     }
     
     .footer-main-menu {
-            background: $brightgreen;
+            background: $primary-dark;
+            
+            li, a {
+                color: $white;
+            }
         }
         
     .footer-latest-posts {
-        background: $lightblue;
-        @include border-top-serrated(.5em, $brightgreen);
-        @include border-bottom-serrated(.5em, $jet);
+        background: $secondary-light;
+        @include border-top-serrated(.5em, $primary-dark);
+        @include border-bottom-serrated(.5em, $black);
         
-        a {
-            color: $brightgreen;
+        h3 {
+            color: $primary-dark;
+        }
+        
+        li, a {
+            color: $black;
         }
     }
     
     .footer-archives {
-        background: $jet;
+        background: $black;
         
         h3 {
-            color: $brightgreen;
+            color: $secondary-light;
         }
         
-        a {
+        li, a {
             color: $white;
         }
     }
 
     h4 {
-        color: $jet;
+        color: $black;
     }
     a { 
         font-family: $font-family-sans-serif-secondary;
-        color: $darkblue;
+        color: $secondary-dark;
     }
     
     input {
@@ -270,20 +280,44 @@ footer {
     }
     
     .button {
-        background-color: $jet;
-        color: $jet;
+        background-color: $black;
+        color: $black;
         font-family: $font-family-sans-serif-secondary;
         color: $white;
         font-size: $h6-font-size;
         
         &:hover {
-            background-color: $lightblue;
+            background-color: $secondary-light;
+            color: $black;
         }
     }
 }
 
 // iPad rules
-@media #{$medium-up} {    
+@media #{$medium-up} {
+    header {
+        width: 272px;
+        margin: 5rem auto;
+        
+        h1 {
+            font-size: rem-calc(56.68);
+        }
+    }
+    
+    p {
+        font-size: $paragraph-font-size + 0.2;
+        line-height: $base-line-height + 0.2;
+    }
+    
+    .wp-caption {
+        margin-bottom: 3.2rem;
+    }
+    
+    .wp-caption-text {
+        font-size: 80%;
+        line-height: 1.4rem;
+    }
+    
     footer ul a {
         font-size: $h5-font-size;
     }
