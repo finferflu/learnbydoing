@@ -88,7 +88,16 @@ body { height: auto !important; }
 
 
 body {
+    //background: $white url(../img/tree_bark.png) repeat top left;
+    background: $white;
+}
+
+.row.content, .spacer {
     background: $white url(../img/tree_bark.png) repeat top left;
+}
+
+.row.content {
+    padding-top: 1rem;
 }
 
 h1 {
@@ -117,7 +126,7 @@ h2 {
 // Header styles 
 header {
     margin: 2rem 1.5rem 2.5rem;
-    border: 10px double $secondary-light;
+    border: 8px double $secondary-light;
 }
 
 h1.blog-title {
@@ -223,47 +232,44 @@ article {
 
 
 // Footer styles 
-.footer-top {
-  @include border-bottom-serrated(.5em, $primary-dark);
-}
-
 footer {
+    background: $black url(../img/tree_bark-inverted.png) repeat;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     
     h3 {
         margin-top: 1rem;
     }
     
     .footer-main-menu {
-            background: $primary-dark;
+            h3 { 
+                color: $white;
+            }
             
             li, a {
-                color: $white;
+                color: $secondary-light;
             }
         }
         
     .footer-latest-posts {
-        background: $secondary-light;
-        @include border-top-serrated(.5em, $primary-dark);
-        @include border-bottom-serrated(.5em, $black);
-        
         h3 {
             color: $primary-dark;
         }
         
         li, a {
-            color: $black;
+            color: $white;
         }
     }
     
     .footer-archives {
-        background: $black;
+//         background: $black;
         
         h3 {
             color: $secondary-light;
         }
         
         li, a {
-            color: $white;
+            color: $primary-light;
         }
     }
 
@@ -277,23 +283,25 @@ footer {
     
     input {
        font-size: $h6-font-size !important; 
+       border-width: 0 !important;
+       box-shadow: none;
+       background-color: $white;
     }
     
     .button {
-        background-color: $black;
-        color: $black;
+        background-color: $secondary-light;
+        color: $black !important;
         font-family: $font-family-sans-serif-secondary;
-        color: $white;
         font-size: $h6-font-size;
         
         &:hover {
-            background-color: $secondary-light;
+            background-color: $primary-light;
             color: $black;
         }
     }
 }
 
-// iPad rules
+// iPad and up rules
 @media #{$medium-up} {
     header {
         width: 272px;
@@ -320,5 +328,11 @@ footer {
     
     footer ul a {
         font-size: $h5-font-size;
+    }
+    
+    .search-bar {
+        width: 290px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }

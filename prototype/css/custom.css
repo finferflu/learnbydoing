@@ -6002,7 +6002,13 @@ body {
         a zig zag triangle border with linear gradient
 */
 body {
+  background: #F4F4F4; }
+
+.row.content, .spacer {
   background: #F4F4F4 url(../img/tree_bark.png) repeat top left; }
+
+.row.content {
+  padding-top: 1rem; }
 
 h1 {
   color: #222222; }
@@ -6026,7 +6032,7 @@ h2 {
 
 header {
   margin: 2rem 1.5rem 2.5rem;
-  border: 10px double #76FED3; }
+  border: 8px double #76FED3; }
 
 h1.blog-title {
   margin: 3rem 2rem;
@@ -6105,89 +6111,42 @@ article {
   padding-top: 0.5rem;
   color: #7B9A91; }
 
-.footer-top {
-  position: relative;
-  padding-bottom: 0.5em; }
-.footer-top:after {
-  bottom: 0px;
-  background-position: left bottom;
-  background: -webkit-linear-gradient(-225deg, #FD9276 0.25em, transparent 0), -webkit-linear-gradient(-315deg, #FD9276 0.25em, transparent 0);
-  background: linear-gradient(-45deg, #FD9276 0.25em, transparent 0), linear-gradient(45deg, #FD9276 0.25em, transparent 0);
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 0.5em;
-  background-repeat: repeat-x;
-  background-size: 0.5em 0.5em; }
-
-footer h3 {
-  margin-top: 1rem; }
-footer .footer-main-menu {
-  background: #FD9276; }
-  footer .footer-main-menu li, footer .footer-main-menu a {
+footer {
+  background: #222222 url(../img/tree_bark-inverted.png) repeat;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  footer h3 {
+    margin-top: 1rem; }
+  footer .footer-main-menu h3 {
     color: #F4F4F4; }
-footer .footer-latest-posts {
-  background: #76FED3; }
-  footer .footer-latest-posts {
-    position: relative;
-    padding-top: 0.5em; }
-  footer .footer-latest-posts:before {
-    top: 0px;
-    background-position: left top;
-    background: -webkit-linear-gradient(-135deg, #FD9276 0.25em, transparent 0), -webkit-linear-gradient(-405deg, #FD9276 0.25em, transparent 0);
-    background: linear-gradient(-135deg, #FD9276 0.25em, transparent 0), linear-gradient(135deg, #FD9276 0.25em, transparent 0);
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 0.5em;
-    background-repeat: repeat-x;
-    background-size: 0.5em 0.5em; }
-  footer .footer-latest-posts {
-    position: relative;
-    padding-bottom: 0.5em; }
-  footer .footer-latest-posts:after {
-    bottom: 0px;
-    background-position: left bottom;
-    background: -webkit-linear-gradient(-225deg, #222222 0.25em, transparent 0), -webkit-linear-gradient(-315deg, #222222 0.25em, transparent 0);
-    background: linear-gradient(-45deg, #222222 0.25em, transparent 0), linear-gradient(45deg, #222222 0.25em, transparent 0);
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 0.5em;
-    background-repeat: repeat-x;
-    background-size: 0.5em 0.5em; }
+  footer .footer-main-menu li, footer .footer-main-menu a {
+    color: #76FED3; }
   footer .footer-latest-posts h3 {
     color: #FD9276; }
   footer .footer-latest-posts li, footer .footer-latest-posts a {
-    color: #222222; }
-footer .footer-archives {
-  background: #222222; }
+    color: #F4F4F4; }
   footer .footer-archives h3 {
     color: #76FED3; }
   footer .footer-archives li, footer .footer-archives a {
-    color: #F4F4F4; }
-footer h4 {
-  color: #222222; }
-footer a {
-  font-family: "Open Sans Condensed", Helvetica, Roboto, Arial, sans-serif;
-  color: #7B9A91; }
-footer input {
-  font-size: 0.7725rem !important; }
-footer .button {
-  background-color: #222222;
-  color: #222222;
-  font-family: "Open Sans Condensed", Helvetica, Roboto, Arial, sans-serif;
-  color: #F4F4F4;
-  font-size: 0.7725rem; }
-  footer .button:hover {
-    background-color: #76FED3;
+    color: #FFC7B8; }
+  footer h4 {
     color: #222222; }
+  footer a {
+    font-family: "Open Sans Condensed", Helvetica, Roboto, Arial, sans-serif;
+    color: #7B9A91; }
+  footer input {
+    font-size: 0.7725rem !important;
+    border-width: 0 !important;
+    box-shadow: none;
+    background-color: #F4F4F4; }
+  footer .button {
+    background-color: #76FED3;
+    color: #222222 !important;
+    font-family: "Open Sans Condensed", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 0.7725rem; }
+    footer .button:hover {
+      background-color: #FFC7B8;
+      color: #222222; }
 
 @media only screen and (min-width:40.063em) {
   header {
@@ -6209,4 +6168,9 @@ footer .button {
 
   footer ul a {
     font-size: 1.25rem; }
+
+  .search-bar {
+    width: 290px !important;
+    margin-left: auto !important;
+    margin-right: auto !important; }
  }
