@@ -5998,14 +5998,13 @@ th.hide-for-touch {
 body {
   height: auto !important; }
 
-/* border-serrated
-        a zig zag triangle border with linear gradient
-*/
 body {
-  background: #F4F4F4; }
+  background: #F4F4F4 url(../img/tree_bark.png) repeat top left;
+  padding-top: 0; }
 
-.row.content, .spacer {
-  background: #F4F4F4 url(../img/tree_bark.png) repeat top left; }
+header {
+  padding: 2rem 0 2.5rem;
+  background-color: #F4F4F4; }
 
 .row.content {
   padding-top: 1rem; }
@@ -6016,22 +6015,16 @@ h1 {
 h2 {
   color: #FD9276;
   padding: 0.6rem 0.6rem;
-  text-decoration: underline;
-  /*
-             transform: rotate(3deg);
-          -o-transform: rotate(3deg);
-         -ms-transform: rotate(3deg);
-        -moz-transform: rotate(3deg);
-     -webkit-transform: rotate(3deg);
-*/ }
+  text-decoration: underline; }
 
 .img-separator {
   display: block;
   width: 4rem;
   margin: 0 auto; }
 
-header {
-  margin: 2rem 1.5rem 2.5rem;
+.header-box {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   border: 8px double #76FED3; }
 
 h1.blog-title {
@@ -6040,7 +6033,7 @@ h1.blog-title {
 
 p.lead {
   font-family: "Open Sans Condensed", Helvetica, Roboto, Arial, sans-serif;
-  padding: 2rem 0.2rem;
+  padding: 2rem 0.5rem;
   text-align: center;
   color: #222222;
   font-size: 0.99rem;
@@ -6050,7 +6043,7 @@ p.lead {
 a {
   color: #FD9276; }
   a:hover {
-    color: #76FED3; }
+    color: #7B9A91; }
 
 article {
   background-color: #F4F4F4;
@@ -6059,19 +6052,6 @@ article {
   margin-bottom: 2rem; }
   article a {
     text-decoration: underline; }
-
-@media only screen and (min-width:40.063em) {
-  header {
-    margin-bottom: 3rem; }
-
-  article {
-    margin-top: 0; }
-    article .wp-caption {
-      margin-top: 2.2rem; }
-
-  .entry-title {
-    margin-bottom: 0; }
- }
 
 #comments {
   margin-top: 2rem; }
@@ -6089,7 +6069,7 @@ article {
 .post-image {
   display: block;
   margin-bottom: 0;
-  border: 3px double #222222;
+  border: 4px double #76FED3;
   padding: 0.5rem; }
 
 .wp-caption-text {
@@ -6150,9 +6130,21 @@ footer {
 
 @media only screen and (min-width:40.063em) {
   header {
+    padding: 5rem 0; }
+
+  article {
+    margin-top: 0; }
+    article .wp-caption {
+      margin-top: 2.2rem; }
+
+  .entry-title {
+    margin-bottom: 0; }
+
+  .header-box {
     width: 272px;
-    margin: 5rem auto; }
-    header h1 {
+    margin-left: auto;
+    margin-right: auto; }
+    .header-box h1 {
       font-size: 3.5425rem; }
 
   p {
@@ -6173,4 +6165,9 @@ footer {
     width: 290px !important;
     margin-left: auto !important;
     margin-right: auto !important; }
+ }
+
+@media only screen and (min-width:64.063em) {
+  .wp-caption {
+    margin-top: 2.8rem !important; }
  }

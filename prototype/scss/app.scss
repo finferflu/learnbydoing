@@ -46,54 +46,14 @@
 // Temporary rule to make baseline.it work
 body { height: auto !important; }
 
-/* border-serrated
-        a zig zag triangle border with linear gradient
-*/
-@mixin border-top-serrated($size, $color-outer) {
-    & {
-        position: relative;
-        padding-top: $size;
-    }  
-    &:before {
-        top: 0px;
-        background-position: left top;
-        @include background(linear-gradient(-135deg, $color-outer $size / 2, transparent 0), linear-gradient(135deg, $color-outer $size / 2, transparent 0));
-        @include border-serrated-helper($size, $color-outer);
-    }
-}
-@mixin border-bottom-serrated($size, $color-outer) {
-    & {
-        position: relative;
-        padding-bottom: $size;
-    }
-    &:after {
-        bottom: 0px;
-        background-position: left bottom;
-        @include background(linear-gradient(-45deg, $color-outer $size / 2, transparent 0), linear-gradient(45deg, $color-outer $size / 2, transparent 0));
-        @include border-serrated-helper($size, $color-outer);
-    }
-}
-
-@mixin border-serrated-helper($size, $color-outer) {
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: $size;
-    background-repeat: repeat-x;
-    background-size: $size $size;
-}
- 
-
-
 body {
-    //background: $white url(../img/tree_bark.png) repeat top left;
-    background: $white;
+    background: $white url(../img/tree_bark.png) repeat top left;
+    padding-top: 0;
 }
 
-.row.content, .spacer {
-    background: $white url(../img/tree_bark.png) repeat top left;
+header {
+    padding: 2rem 0 2.5rem;
+    background-color: $white;
 }
 
 .row.content {
@@ -108,13 +68,6 @@ h2 {
     color: $primary-dark;
     padding: 0.6rem 0.6rem;
     text-decoration: underline;
-/*
-             transform: rotate(3deg);
-          -o-transform: rotate(3deg);
-         -ms-transform: rotate(3deg);
-        -moz-transform: rotate(3deg);
-     -webkit-transform: rotate(3deg);
-*/
 }   
 
 .img-separator {
@@ -124,8 +77,9 @@ h2 {
 }                           
 
 // Header styles 
-header {
-    margin: 2rem 1.5rem 2.5rem;
+.header-box {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     border: 8px double $secondary-light;
 }
 
@@ -136,11 +90,10 @@ h1.blog-title {
 
 p.lead {
     font-family: $font-family-sans-serif-secondary;
-    padding: 2rem 0.2rem;
+    padding: 2rem 0.5rem;
     text-align: center;
     color: $black;
     font-size: 0.99rem;
-//     border-top: 1px solid $salmon;
     margin: 0 3.2rem;
     line-height: 1.3rem;
 }
@@ -149,7 +102,7 @@ a {
     color: $primary-dark;
     
     &:hover {
-        color: $secondary-light;
+        color: $secondary-dark;
     }
 }
 
@@ -163,25 +116,6 @@ article {
     a {
         text-decoration: underline;
     }
-}
-
-@media #{$medium-up} {
-    header {
-        margin-bottom: 3rem;
-    }
-    
-    article {
-        margin-top: 0;
-        
-        .wp-caption {
-            margin-top: 2.2rem;
-        }
-    }
-    
-    .entry-title {
-        margin-bottom: 0;
-    }
-    
 }
 
 #comments {
@@ -204,7 +138,7 @@ article {
 .post-image {
     display: block;
     margin-bottom: 0;
-    border: 3px double $black;
+    border: 4px double $secondary-light;
     padding: .5rem;
 }
 
@@ -302,10 +236,27 @@ footer {
 }
 
 // iPad and up rules
-@media #{$medium-up} {
+@media #{$medium-up} { 
     header {
+        padding: 5rem 0;
+    }   
+    
+    article {
+        margin-top: 0;
+        
+        .wp-caption {
+            margin-top: 2.2rem;
+        }
+    }
+    
+    .entry-title {
+        margin-bottom: 0;
+    }
+
+    .header-box {
         width: 272px;
-        margin: 5rem auto;
+        margin-left: auto;
+        margin-right: auto;
         
         h1 {
             font-size: rem-calc(56.68);
@@ -334,5 +285,12 @@ footer {
         width: 290px !important;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+}
+
+// Large screens and up rules
+@media #{$large-up} {
+    .wp-caption {
+        margin-top: 2.8rem !important;
     }
 }
