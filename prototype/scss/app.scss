@@ -78,14 +78,17 @@ h2 {
 
 // Header styles 
 .header-box {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
     border: 8px double $secondary-light;
 }
 
 h1.blog-title {
    margin: 3rem 2rem;
    color: $black;
+   font-size: rem-calc(36.68);
 }
 
 p.lead {
@@ -182,6 +185,10 @@ footer {
             
             li, a {
                 color: $secondary-light;
+                
+                &:hover {
+                    color: $primary-light;
+                }
             }
         }
         
@@ -192,18 +199,24 @@ footer {
         
         li, a {
             color: $white;
+            
+            &:hover {
+                color: $secondary-light;
+            }
         }
     }
     
     .footer-archives {
-//         background: $black;
-        
         h3 {
             color: $secondary-light;
         }
         
         li, a {
             color: $primary-light;
+            
+            &:hover {
+                color: $white;
+            }
         }
     }
 
@@ -251,16 +264,6 @@ footer {
     
     .entry-title {
         margin-bottom: 0;
-    }
-
-    .header-box {
-        width: 272px;
-        margin-left: auto;
-        margin-right: auto;
-        
-        h1 {
-            font-size: rem-calc(56.68);
-        }
     }
     
     p {

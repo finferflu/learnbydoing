@@ -6023,13 +6023,15 @@ h2 {
   margin: 0 auto; }
 
 .header-box {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
   border: 8px double #76FED3; }
 
 h1.blog-title {
   margin: 3rem 2rem;
-  color: #222222; }
+  color: #222222;
+  font-size: 2.2925rem; }
 
 p.lead {
   font-family: "Open Sans Condensed", Helvetica, Roboto, Arial, sans-serif;
@@ -6101,14 +6103,20 @@ footer {
     color: #F4F4F4; }
   footer .footer-main-menu li, footer .footer-main-menu a {
     color: #76FED3; }
+    footer .footer-main-menu li:hover, footer .footer-main-menu a:hover {
+      color: #FFC7B8; }
   footer .footer-latest-posts h3 {
     color: #FD9276; }
   footer .footer-latest-posts li, footer .footer-latest-posts a {
     color: #F4F4F4; }
+    footer .footer-latest-posts li:hover, footer .footer-latest-posts a:hover {
+      color: #76FED3; }
   footer .footer-archives h3 {
     color: #76FED3; }
   footer .footer-archives li, footer .footer-archives a {
     color: #FFC7B8; }
+    footer .footer-archives li:hover, footer .footer-archives a:hover {
+      color: #F4F4F4; }
   footer h4 {
     color: #222222; }
   footer a {
@@ -6139,13 +6147,6 @@ footer {
 
   .entry-title {
     margin-bottom: 0; }
-
-  .header-box {
-    width: 272px;
-    margin-left: auto;
-    margin-right: auto; }
-    .header-box h1 {
-      font-size: 3.5425rem; }
 
   p {
     font-size: 1.2rem;
