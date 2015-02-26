@@ -1,0 +1,1 @@
+function init(){window.addEventListener("scroll",function(){var e=window.pageYOffset||document.documentElement.scrollTop,l=70;e>l?($("header").addClass("small fixed"),$(".entry-title").addClass("small")):$("header").hasClass("small fixed")&&($("header").removeClass("small fixed"),$(".entry-title").removeClass("small"))})}window.onload=init();

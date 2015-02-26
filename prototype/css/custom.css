@@ -6004,7 +6004,34 @@ body {
 
 header {
   padding: 2rem 0 2.5rem;
-  background-color: #F4F4F4; }
+  background-color: #F4F4F4;
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -ms-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out; }
+
+header.small {
+  padding: 0.5rem 0;
+  margin-bottom: 300px;
+  border-bottom: 1px solid #76FED3; }
+  header.small .header-box {
+    height: auto;
+    width: auto;
+    border: none; }
+  header.small h1.blog-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.4175rem;
+    -webkit-transition: margin 0.1s ease-in-out;
+    -moz-transition: margin 0.1s ease-in-out;
+    -ms-transition: margin 0.1s ease-in-out;
+    -o-transition: margin 0.1s ease-in-out;
+    transition: margin 0.1s ease-in-out; }
+  header.small p.lead {
+    display: none; }
+
+.entry-title.small {
+  margin-top: 250px; }
 
 .row.content {
   padding-top: 1rem; }
@@ -6031,7 +6058,12 @@ h2 {
 h1.blog-title {
   margin: 3rem 2rem;
   color: #222222;
-  font-size: 2.2925rem; }
+  font-size: 2.2925rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 p.lead {
   font-family: "Open Sans Condensed", Helvetica, Roboto, Arial, sans-serif;
@@ -6040,7 +6072,12 @@ p.lead {
   color: #222222;
   font-size: 0.99rem;
   margin: 0 3.2rem;
-  line-height: 1.3rem; }
+  line-height: 1.3rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
 
 a {
   color: #FD9276; }
