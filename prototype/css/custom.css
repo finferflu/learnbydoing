@@ -6049,6 +6049,9 @@ h2 {
   width: 4rem;
   margin: 0 auto; }
 
+.img-separator-bottom {
+  margin: 4rem auto; }
+
 .header-box {
   width: 230px;
   margin-left: auto;
@@ -6082,7 +6085,7 @@ p.lead {
 a {
   color: #FD9276; }
   a:hover {
-    color: #7B9A91; }
+    color: #76FED3; }
 
 article {
   background-color: #F4F4F4;
@@ -6122,13 +6125,42 @@ article {
 .spacer {
   height: 3rem; }
 
-.meta-info {
-  border-top: 1px solid #222222;
+.meta-info, .comment-meta {
+  border-top: 1px solid #FFC7B8;
   list-style-type: circle;
   list-style-position: inside;
   margin: 1.5rem 1rem;
   padding-top: 0.5rem;
   color: #7B9A91; }
+
+.comments-title {
+  text-align: center;
+  color: #7B9A91; }
+
+.comment-box {
+  margin-top: 2rem !important; }
+
+.comment-avatar img {
+  width: 64px;
+  box-sizing: content-box;
+  padding: 0.3rem;
+  background-color: #F4F4F4;
+  border: 3px double #76FED3; }
+
+.comment-meta {
+  font-family: "Open Sans Condensed", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 80%;
+  border: none;
+  margin: 0;
+  margin-bottom: 0.2rem;
+  padding-top: 0; }
+
+.comment-content {
+  background: #F4F4F4;
+  padding: 1rem; }
+
+.comment-username, .comment-text {
+  font-size: 98%; }
 
 footer {
   background: #222222 url(../img/tree_bark-inverted.png) repeat;

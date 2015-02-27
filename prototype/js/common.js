@@ -1,3 +1,5 @@
+// Based on http://callmenick.com/2014/02/18/create-an-animated-resizing-header-on-scroll/
+
 function init() {
     window.addEventListener('scroll', function(){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
